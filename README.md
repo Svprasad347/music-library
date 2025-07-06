@@ -35,7 +35,19 @@ music-application/
 ├── README.md                     
 
 
----
+--------------------------------------------
+## Login Details
+
+- **Admin**: Can add and delete songs
+- **User**: Can only view songs
+
+--------------------------------------------
+
+## GitHub Repository
+
+Hosted on GitHub: https://github.com/Svprasad347/music-library.git
+
+---------------------------------------------
 
 ## Testing Information
 
@@ -53,7 +65,8 @@ To run tests with coverage:
 
 `npm run test -- --coverage`
 
-How to Run Project
+## How to Run Project
+
 Step 1: Install packages
 cd core-app
 `npm install`
@@ -70,18 +83,15 @@ Terminal 1: cd music-library
 Terminal 2: cd core-app
 `npm run dev:core-app`
 
-Login Details 
-1.admin → can add/delete songs 
-2.user → can only view songs
+## UI Design
 
-UI Design
 Modern login screen centered on screen
 
 Music list is mobile-friendly
 
 Song management UI is clean and grouped properly
 
-Tools Used
+## Tools Used
 
 React 18,
 Vite,
@@ -90,7 +100,7 @@ Bootstrap 5,
 Jest + React Testing Library
 
 
-About Me
+## About Me
 This is my micro-frontend React assignment.
 I did everything hands-on — from setup, routing, UI, testing, and debugging.
 It helped me understand micro frontend concepts better and improve my React testing skills.
