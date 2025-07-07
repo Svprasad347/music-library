@@ -2,8 +2,7 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import SongsList from "../src/Components/SongsList";
 
-// Sample Songs used across multiple tests
-const sampleSongs = [
+ const sampleSongs = [
   { id: 1, title: "Tum Hi Ho", artist: "Arijit Singh", album: "Aashiqui 2" },
   { id: 2, title: "Butta Bomma", artist: "Armaan Malik", album: "Ala Vaikunthapurramuloo" },
   { id: 3, title: "Rowdy Baby", artist: "Dhanush & Dhee", album: "Maari 2" },
@@ -65,14 +64,14 @@ describe("SongList Component", () => {
   });
 
   it("deletes a song when delete is clicked", () => {
-    window.confirm = jest.fn(() => true); // Simulate confirmation
+    window.confirm = jest.fn(() => true);  
     render(<SongsList role="admin" songs={[...sampleSongs]} />);
 
-    // Click delete on the first delete button
+    
     const deleteBtn = screen.getAllByRole("button", { name: /delete/i })[0];
     fireEvent.click(deleteBtn);
 
-    // Check that the first song is gone
+     
     expect(screen.queryByText(/Tum Hi Ho/i)).toBeNull();
   });
 

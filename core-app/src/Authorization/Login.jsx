@@ -73,17 +73,12 @@ const Login = ({ onLogin }) => {
               className="btn btn-primary w-100 rounded-pill fw-bold"
               style={{ letterSpacing: 1 }}
             >
-              🔐 Login
+            Login
             </button>
           </form>
         </div>
 
-        <p
-          className="text-center text-muted mt-3 mb-0"
-          style={{ fontSize: "0.85rem" }}
-        >
-          &copy; {new Date().getFullYear()} Your Company Name
-        </p>
+         
       </div>
     </div>
   );
